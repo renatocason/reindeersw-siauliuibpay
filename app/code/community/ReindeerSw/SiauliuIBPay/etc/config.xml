@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @copyright Copyright (c) 2014 Reindeer Software (http://reindeersw.com)
+ */
+-->
+<config>
+    <modules>
+        <ReindeerSw_SiauliuIBPay>
+            <version>0.1.0.0</version>
+        </ReindeerSw_SiauliuIBPay>
+    </modules>
+    <global>
+        <models>
+            <reindeersw_siauliuibpay>
+                <class>ReindeerSw_SiauliuIBPay_Model</class>
+            </reindeersw_siauliuibpay>
+        </models>
+        <helpers>
+            <reindeersw_siauliuibpay>
+                <class>ReindeerSw_SiauliuIBPay_Helper</class>
+            </reindeersw_siauliuibpay>
+        </helpers>
+        <blocks>
+            <reindeersw_siauliuibpay>
+                <class>ReindeerSw_SiauliuIBPay_Block</class>
+            </reindeersw_siauliuibpay>
+        </blocks>
+    </global>
+    <default>
+        <payment>
+            <reindeersw_siauliuibpay>
+                <model>reindeersw_siauliuibpay/standard</model>
+                <active>0</active>
+                <payment_action>sale</payment_action>
+                <title>Siauliu IB Pay</title>
+                <submit_url>https://online.sb.lt/ib/site/ibpay/login</submit_url>
+                <vk_snd_id></vk_snd_id>
+                <allowspecific>0</allowspecific>
+                <sort_order>1</sort_order>
+            </reindeersw_siauliuibpay>
+        </payment>
+    </default>
+    <frontend>
+        <routers>
+            <reindeersw_siauliuibpay>
+                <use>standard</use>
+                <args>
+                    <module>ReindeerSw_SiauliuIBPay</module>
+                    <frontName>siauliuibpay</frontName>
+                </args>
+            </reindeersw_siauliuibpay>
+        </routers>
+    </frontend>
+</config>

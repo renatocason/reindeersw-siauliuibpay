@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <ReindeerSw_SiauliuIBPay>
+            <active>true</active>
+            <codePool>community</codePool>
+        </ReindeerSw_SiauliuIBPay>
+    </modules>
+</config>
